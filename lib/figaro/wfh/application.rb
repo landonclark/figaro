@@ -8,9 +8,7 @@ module Figaro
       end
 
       def default_environment
-        puts "whats my environment #{ENV['WF_DEPLOYMENT']}"
-        ENV['WF_DEPLOYMENT'] || 'development'
-        'test'
+        ::ENV['WF_DEPLOYMENT'] || 'development'
       end
     end
   end
