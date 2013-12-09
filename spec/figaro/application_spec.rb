@@ -69,13 +69,6 @@ module Figaro
         expect(application.environment).to eq("test")
       end
 
-      it "casts to string" do
-        application = Application.new(environment: ActiveSupport::StringInquirer.new("test"))
-
-        expect(application.environment).to eq("test")
-        expect(application.environment).not_to be_an(ActiveSupport::StringInquirer)
-      end
-
       it "follows a changing default" do
         application = Application.new
 

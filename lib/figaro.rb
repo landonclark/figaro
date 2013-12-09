@@ -1,7 +1,6 @@
-require "figaro/application"
-require "figaro/env"
-require "figaro/rails"
-require "figaro/tasks"
+require 'figaro/application'
+require 'figaro/wfh/application'
+require 'figaro/env'
 
 module Figaro
   extend self
@@ -13,7 +12,7 @@ module Figaro
   end
 
   def backend
-    @backend ||= Figaro::Rails::Application
+    @backend ||= Figaro::Wfh::Application
   end
 
   def application

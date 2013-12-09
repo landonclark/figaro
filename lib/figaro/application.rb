@@ -10,6 +10,7 @@ module Figaro
     attr_writer :path, :environment
 
     def initialize(options = {})
+      puts "Options are #{options}"
       @path = options[:path]
       @environment = options[:environment]
     end
