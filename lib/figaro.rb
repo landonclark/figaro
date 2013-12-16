@@ -22,4 +22,12 @@ module Figaro
   def load
     application.load
   end
+
+  def config_file
+    application.path
+  end
+
+  def environment
+    application.environment
+  end
 end
