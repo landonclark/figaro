@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |gem|
   gem.name    = "figaro"
-  gem.version = "0.7.0"
+  gem.version = "0.7.1"
 
   gem.author      = "Steve Richert"
   gem.email       = "steve.richert@gmail.com"
@@ -11,7 +11,7 @@ Gem::Specification.new do |gem|
   gem.homepage    = "https://github.com/laserlemon/figaro"
   gem.license     = "MIT"
 
-  gem.add_dependency "bundler", "~> 1.3.5"
+  gem.add_development_dependency "bundler", "> 1.3.5"
 
   gem.files         = `git ls-files`.split($\)
   gem.test_files    = gem.files.grep(/^(features|spec)/)
